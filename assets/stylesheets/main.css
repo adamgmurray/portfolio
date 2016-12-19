@@ -1,0 +1,309 @@
+/*site prep*/
+*,
+*:before,
+*:after {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-style: normal!important;
+}
+html{
+font-family: 'Montserrat', sans-serif;
+font-size: 62.5%;
+}
+body{
+font-size:1.5rem;
+}
+/*text fade in*/
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+/*mail icon*/
+.mail{
+width:50px;
+}
+.btn{
+position: absolute;
+top: 0px;
+right: 20px;
+}
+/*hello section*/
+header{
+width:98%;
+border-radius: 0px 0px 5px 5px;
+border-bottom: 3px solid black;
+border-right: 3px solid black;
+border-left: 3px solid black;
+margin-left:auto;
+ margin-right:auto;
+color: black;
+padding: 10px;
+text-align: left;
+opacity:0;  
+-webkit-animation:fadeIn ease-in 1;
+-moz-animation:fadeIn ease-in 1;
+animation:fadeIn ease-in 1; 
+-webkit-animation-fill-mode:forwards;
+-moz-animation-fill-mode:forwards;
+animation-fill-mode:forwards;
+-webkit-animation-duration:1s;
+-moz-animation-duration:1s;
+animation-duration:1s;
+-webkit-animation-delay: 1.2s;
+-moz-animation-delay: 1.2s;
+animation-delay: 1.2s;
+} 
+/*make adam red.*/
+span{
+color:rgb(201, 0, 0);
+}
+/*div bio flex box container*/
+.bio{
+text-align:center;
+margin-top:30px;
+}
+/*image styling*/
+.smile{
+width: 85%;
+transition: all 0.9s ease;
+border-radius:5px;
+margin-bottom:30px;
+}
+
+/*about me/ why/ final note */
+.text{
+width:98%;
+text-align:left;
+margin:auto;
+border-radius:5px;
+color: black;
+border: 3px solid black;
+padding:10px;
+transition: all 0.9s ease;
+opacity:0;  
+-webkit-animation:fadeIn ease-in 1;
+-moz-animation:fadeIn ease-in 1;
+animation:fadeIn ease-in 1; 
+-webkit-animation-fill-mode:forwards;
+-moz-animation-fill-mode:forwards;
+animation-fill-mode:forwards;
+-webkit-animation-duration:1s;
+-moz-animation-duration:1s;
+animation-duration:1s;
+-webkit-animation-delay: 1.2s;
+-moz-animation-delay: 1.2s;
+animation-delay: 1.2s;
+}
+/*make "about me" "why" yellow*/
+.text h2{
+  color:rgb(201, 187, 36);
+}
+
+/*grid background*/
+.work{
+margin-top:200px;
+transition: all 0.9s ease;
+margin-left:-600px;
+margin-top:20px;
+opacity: 0;
+}
+/*Experience header style*/
+.work h1{
+color:rgb(201, 187, 36);
+text-align: center;
+}
+/*employer name*/
+.work h2{
+color:rgb(201, 187, 36);
+}
+/*employement description*/
+.work p{
+color: white
+}
+/*period worked*/
+.work h5{
+color: rgb(214, 214, 214);
+}
+/*get ride of list bullets*/
+ul {
+list-style-type: none;
+}
+/*make the verticle "line" on experience grid*/
+ul li{
+background:rgb(96, 96, 96);
+position: relative;
+margin-top:;
+margin-left:10px;
+width: 5px;
+top: 20px;
+padding-bottom: 40px; 
+border-radius: 0px 0px 500px 500px; /* top left, top right, bottom right, bottom left */
+}
+/*cut off bottom tail of li "line"*/
+ul li:last-child {
+padding-bottom: px;
+}
+/*grid nodes*/
+ul li:before {
+content: '';
+left: -143%;
+top: 0;
+background:rgb(201, 187, 36);
+border: 4px solid  rgb(96, 96, 96);
+width: 20px;
+height:20px;
+border-radius:100%;
+position: absolute;
+}
+/*create line breaks in content divs*/
+hr{
+border: none;
+}
+ul li .content{
+background:rgb(96, 96, 96);
+position: relative;
+top: 7px;
+left: 48px; 
+width: calc(80vw - 20px);
+padding: 20px;
+text-align: left;
+border-radius:5px;
+margin-bottom: 10px;
+}
+/*the "line connecting the content to the main li line*/
+ul li .content:before {
+content: '';
+background:rgb(96, 96, 96);
+position: absolute;
+top: 0;
+left: -35px;
+width: 45px;
+height: 5px;
+}
+/*resume*/
+.resume{
+background:rgb(96, 96, 96);
+text-align: center;
+width:98%;
+border-radius:5px;
+margin-left:auto;
+margin-right:auto;
+height:50px;
+color:rgb(224, 209, 44) !important;
+text-decoration: none !important;
+}
+#resu{
+line-height: 50px;
+white-space: nowrap;
+}
+a:link{
+text-decoration: none;
+color:black;
+}
+/*portiofolio*/
+.portfolio{
+margin-top:70px;
+color:black;
+border: 3px solid black
+width:98%;
+border-radius:5px;
+margin-left:5px;
+margin-right:5px;
+}
+.portHead{
+color:rgb(201, 187, 36);
+text-align:center;
+}
+.portpic{
+width:100%;
+border-radius:5px;
+border: 3px solid black;
+margin-left:auto;
+margin-right:auto;
+border-radius:5px;
+}
+.footer{
+  text-align: center;
+  font-size:1rem;
+}
+
+
+
+@media screen and (min-width: 816px) {
+header{
+font-size:4rem;
+}
+.bio{
+width: 100%;
+display: flex;
+align-items: center;
+flex-flow:row-reverse wrap-reverse;
+justify-content:space-around;
+}
+.smile{
+ order:1;
+ width: 35%;
+ margin-left:10px;
+ }
+.text{    
+text-align: center; 
+margin:0 0 0 0;
+width: 35%;
+border-radius:5px
+}
+.text p{
+text-align: left;
+}  
+/*center the li element "line" */
+ul li {
+margin: 0 auto;
+}
+/*resize content boxes for larger screen*/
+ul li .content{
+width: 40vw;
+margin-left:;
+}
+ul li:nth-child(even) .content {
+left: 63px;
+}
+/* make the horizontal connect lines on odd number li's longer*/
+ul li:nth-child(even) .content:before {
+left: -50px;
+width: 60px;
+}
+/*move even children to the other side*/ 
+ul li:nth-child(odd) .content {
+left: calc(-40vw - 57px);
+}
+/* make the horizontal connect lines on even number li's longer and switched sides*/
+ul li:nth-child(odd) .content:before {
+left: auto;
+right: -50px;
+width: 60px;
+}
+/*center resume*/
+.resume{
+width: 45%;
+margin-right: auto;
+margin-left: auto;
+}
+/*portfolio container*/
+.portfolio{
+text-align: center;
+margin-top:40px;
+margin-left:auto;
+  margin-right:auto;
+width: 65%;
+}
+/*portfolio project text description*/
+.port{
+text-align: left;
+width:85%; 
+margin: auto;
+} 
+/*weather, wiki, leo, etc. screen shot of project*/
+.portpic{
+width:85%;
+border: 3px solid black;
+} 
+}
