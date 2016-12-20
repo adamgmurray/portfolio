@@ -1,6 +1,7 @@
 # portfolio
-**www.adamgmurray.xyz**
-This is my personal website which I am working on while doing help desk support in Cleveland Ohio. 
-(I asked my boss, they're cool with it as long as it isn't my primary effort on the clock.)
-It contains everything employement related about me: work experience, updated resume, freeCodeCamp projects, and personal projects. 
-Want to hire me into a junior front-end development role? Hit me up! adam@adamgmurray.xyz
+This[https://adamgmurray.github.io/portfolio/] is my personal website [www.adamgmurray.xyz] . 
+I am working on this while taking help desk phone calls in Cleveland, Ohio. 
+I asked the boss- they're cool with it. 
+It contains every employement-related-tid-bit about me. 
+*spoiler-alert* 
+I'm intending to land my first job as a front-end developer in early 2017. Hit me up! adam@adamgmurray.xyz
